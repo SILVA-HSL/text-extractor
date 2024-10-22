@@ -1,4 +1,4 @@
-import React from 'react'
+
 import { useState } from 'react';
 import Tesseract from 'tesseract.js';
 import ImageUploader from './ImageUploader';
