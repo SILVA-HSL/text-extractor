@@ -5,7 +5,7 @@ interface ImageUploaderProps {
 }
 
 const ImageUploader: React.FC<ImageUploaderProps> = ({ onImageUpload }) => {
-    const[chosefile,setChoseFile]=useState('choose file');
+    const[chosefile,setChoseFile]=useState('Choose file');
     const [selectImage, setSelectImage] = useState<string | null>(null);
 
     const handleImageChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -21,7 +21,7 @@ const ImageUploader: React.FC<ImageUploaderProps> = ({ onImageUpload }) => {
         if (fileInput) {
           fileInput.click();
         }
-        setChoseFile("start over");
+        setChoseFile("Start over");
       };
   return (
     <div className="d-flex flex-column align-items-center">
